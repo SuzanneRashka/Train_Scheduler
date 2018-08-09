@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
 </head>
@@ -41,7 +43,7 @@
         <!-- form -->
         <div class="background">
             <div>
-                <table>
+                <table class="table table-striped">
                     <thead>
                         <tr class="schedule">
                             <th scope="col">Train Name</th>
@@ -75,8 +77,8 @@
                     <input type="text" class="form-control" id="destination" placeholder="Destination">
                 </div>
                 <div class="form-group">
-                    <label for="train-time">First Train Time</label>
-                    <input type="time" class="form-control" id="train-time" placeholder="Train Time">
+                    <label for="train-time">First Train Time (HH:mm- 24:00)</label>
+                    <input type="text" class="form-control" id="train-time" placeholder="HH:MM">
                 </div>
                 <div class="form-group">
                     <label for="freq">Frequency</label>
