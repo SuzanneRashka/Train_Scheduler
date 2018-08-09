@@ -1,0 +1,22 @@
+body {
+    background: url('../images/train.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: white;
+}
+
+.background {
+    margin: 0 10%;
+    padding: 20px;
+    background: rgb(204, 204, 204);
+    /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.3);
+}
+
+.text {
+    color: white;
+}
+
+.myfooter {}
