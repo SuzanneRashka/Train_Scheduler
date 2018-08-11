@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>The Big Picture - Start Bootstrap Template</title>
+    <title>Train Scheduler</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -28,10 +28,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 class="mt-5">The Big Picture</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates rerum eveniet sapiente
-                        repellat esse, doloremque quod recusandae deleniti nostrum assumenda vel beatae sed aut modi nesciunt
-                        porro quisquam voluptatem.</p>
+                    <h1 class="mt-5">All Aboard!!</h1>
+                    <p>Why fight traffic on your commute to and from work when you can use the time for something you'd rather
+                        be doing instead? Board a train and watch the scenery, read, catch up with a friend or surf the web
+                        with free onboard Wi-Fi. Please review our schedule of routes below and ride a train for your convience.</p>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
                         <tr class="schedule">
                             <th scope="col">Train Name</th>
                             <th scope="col">Destination</th>
-                            <th scope="col">Frequency (in minutes)</th>
+                            <th scope="col">Frequency</th>
                             <th scope="col">Next Arrival</th>
                             <th scope="col">Due in (minutes)</th>
                         </tr>
@@ -64,33 +64,34 @@
 
 
     <br>
-    <section>
+    <section class="footerCorrection">
         <!-- form -->
         <div class="background">
-            <form>
+            <form name="trainForm">
                 <div class="form-group">
                     <label for="train-name">Train Name</label>
-                    <input type="text" class="form-control" id="train-name" placeholder="Train Name">
+                    <input type="text" class="form-control" id="train-name" name="name" placeholder="Train Name">
                 </div>
                 <div class="form-group">
                     <label for="destination">Destination</label>
-                    <input type="text" class="form-control" id="destination" placeholder="Destination">
+                    <input type="text" class="form-control" id="destination" name="destination" placeholder="Destination">
                 </div>
                 <div class="form-group">
-                    <label for="train-time">First Train Time (HH:mm- 24:00)</label>
-                    <input type="text" class="form-control" id="train-time" placeholder="HH:MM">
+                    <label for="train-time">First Train Time (HH:mm - 24:00)</label>
+                    <input type="text" class="form-control" id="train-time" name="time" placeholder="HH:MM">
                 </div>
                 <div class="form-group">
-                    <label for="freq">Frequency</label>
-                    <input type="number" class="form-control" id="freq" placeholder="Frequency">
+                    <label for="freq">Frequency (minutes)</label>
+                    <input type="number" class="form-control" id="freq" name="freq" placeholder="Frequency">
                 </div>
                 <button type="submit" id="submit" class="btn btn-default">Submit</button>
+
             </form>
         </div>
     </section>
 
-    <nav class="myfooter navbar fixed-bottom navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Fixed bottom</a>
+    <nav class="footer navbar fixed-bottom navbar-dark bg-dark">
+        <a class="navbar-brand size"></a>
     </nav>
 
 

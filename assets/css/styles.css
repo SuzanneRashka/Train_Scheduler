@@ -19,6 +19,10 @@ body {
     color: white;
 }
 
-.schedule {
-    color: white;
+.footerCorrection {
+    margin-bottom: 80px;
+}
+
+.footer {
+    height: 50px;
 }
